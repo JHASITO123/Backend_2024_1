@@ -32,7 +32,7 @@ return new class extends Migration
             'role_id' => 3, //Asigna el id del rol correspondiente 
             'phone number' => '3202616545',
             'email' => 'carlosWP03@gmail.com',
-            'password' => Hash::make('123456789'), //Contraseña estandar 
+            'password' => Hash::make('Jhansito3312'), //Contraseña estandar 
             'created_at' => now(),
             'update_at' => now(),
         ]); 
