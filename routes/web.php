@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ApiController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +23,20 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::resource('users', App\Http\Controllers\UserController::class);
 Route::resource('rols', App\Http\Controllers\RolController::class);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 Route::resource('photosDetails', App\Http\Controllers\Photos_detailsController::class);
 Route::resource('photos', App\Http\Controllers\PhotoController::class);
-Route::resource('users', App\Http\Controllers\UserController::class);
+
+Route::post('generateToken/{user}', [App\Http\Controllers\TokenController::class, 'generateToken'])->name('generate-token');
+
+Route::middleware('auth:sanctum')->get('/user', function(Request $request){
+    return $request->users();
+   });
+
+   

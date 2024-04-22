@@ -3,10 +3,10 @@
         <table class="table" id="photos_-details-table">
             <thead>
             <tr>
-                <th>Gps Location</th>
-                <th>Status</th>
-                <th>Description</th>
-                <th colspan="3">Action</th>
+                <th>Gps Localización</th>
+                <th>Estado</th>
+                <th>Descripción</th>
+                <th colspan="3">Acciones</th>
             </tr>
             </thead>
             <tbody>

@@ -45,6 +45,23 @@ class PhotoController extends AppBaseController
     {
         $input = $request->all();
 
+
+        if ($request->hasFile('product_url_image_path')) {
+            $archivo = $request->file('product_url_image_path');
+
+
+            $nombreOriginal = $archivo->getClientOriginalName();
+            $extensionOriginal = $archivo->getClientOriginalExtension();
+            $id_usuario = auth()->id();
+            $fileName = "{$id_usuario}_{$nombreOriginal}";
+
+
+            $archivo->move(public_path('selected_product_Images'), $fileName);
+
+            $imput['url'] = 'selected_product_Images/' . $fileName;
+        }
+
+
         $photo = $this->photoRepository->create($input);
 
         Flash::success('Photo saved successfully.');

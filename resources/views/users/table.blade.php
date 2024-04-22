@@ -3,14 +3,14 @@
         <table class="table" id="users-table">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Role Id</th>
-                <th>Phone Number</th>
+                <th>Nombre</th>
+                <th>Rol Id</th>
+                <th>Número telefono</th>
                 <th>Email</th>
-                <th>Email Verified At</th>
-                <th>Password</th>
+                <th>Verificación Email</th>
+                <th>Contraseña</th>
                 <th>Remember Token</th>
-                <th colspan="3">Action</th>
+                <th colspan="3">Acciones</th>
             </tr>
             </thead>
             <tbody>

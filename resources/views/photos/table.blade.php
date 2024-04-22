@@ -3,10 +3,10 @@
         <table class="table" id="photos-table">
             <thead>
             <tr>
-                <th>User Id</th>
-                <th>Photo Details Id</th>
+                <th>Usuario Id</th>
+                <th>Detalle Id de fotos</th>
                 <th>Url</th>
-                <th colspan="3">Action</th>
+                <th colspan="3">Acciones</th>
             </tr>
             </thead>
             <tbody>

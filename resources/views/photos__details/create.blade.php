@@ -6,7 +6,7 @@
             <div class="row mb-2">
                 <div class="col-sm-12">
                     <h1>
-                    Create Photos  Details
+                    Create Detalles de las fotos
                     </h1>
                 </div>
             </div>
@@ -31,7 +31,7 @@
 
             <div class="card-footer">
                 {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('photosDetails.index') }}" class="btn btn-default"> Cancel </a>
+                <a href="{{ route('photosDetails.index') }}" class="btn btn-default"> Cancelar </a>
             </div>
 
             {!! Form::close() !!}
